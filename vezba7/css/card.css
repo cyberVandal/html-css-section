@@ -1,0 +1,119 @@
+html, body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    /* Reminder: Da stavime font of Google web fonts */
+}
+
+h2, p {
+    margin: 0px;
+}
+
+.boxes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main{
+
+    width:390px;
+    
+    border-radius: 20px;
+    box-shadow: 0px 0px 42px 1px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    /* background-color: red; */
+}
+.main:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 42px 2px rgba(0, 0, 0, 0.3);
+}
+
+.topCard{
+    width: 100%;
+   
+}
+.imgHolder{
+    height: 200px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+
+}
+.imgHolder img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.middleCard{
+
+    width: 100%;
+    height: 100px;
+    /* background-color:white; */
+
+
+}
+.bottomCard{
+    width: 100%;
+    height: 200px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+
+}
+.bottomCard p{
+
+   
+    color: #5f3235;
+    font-size: 12px;
+    line-height: 21px;
+    
+}
+.date{
+
+    display: inline-block;
+    width: calc(100% / 3);
+    height: 100px;
+    margin: 0;
+    float: left;
+    
+}
+.first{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.second{
+    background-color: slateblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.third{
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.date p{
+
+    font-size: 36px;
+}
