@@ -21,23 +21,56 @@
 }
 .secondSection{
     width:100%;
-    height: 50px;
+    height: 100px;
     background: blue;
     position: absolute;
     top: 200px;
 }
 .arrowLeft{
     width: 30px;
-    height: 30px;
+    height: 50px;
     display: inline-block;
     position: absolute;
-    left: 10px;
-    top: 10px;
-    background: url("../images/arrows2.png");
-    background-position-x: 0px;
-    background-position-y: 0px;
+    left: 25px;
+    top: 25px;
+    background: url("../images/leftArrow.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
 
+}
+.arrowRight{
+    width: 30px;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    background: url("../images/leftArrow.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+
+
+}
+
+.h1Holder{
+        display: inline-block;
+        width: 60px;
+        height: 20px;
+        position: absolute;
+        top: 40;
+        left:160;
+        background: red;
+       
+        
 }
 .thirdSection{
     width: 100%;
