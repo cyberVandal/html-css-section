@@ -13,22 +13,22 @@
         <div class="formHolder">
 
               
-                    <form name="form" class="form" action=""  method="post">
+                    <form name="RegForm" class="form" action="#" onsubmit="return Proverka()"  method="post" >
                             <br> 
-                            <input id="username" type="text" name="username" placeholder="useraname" required><br>
+                            <input id="username" type="text" name="username" placeholder="useraname" ><br>
                             <label for="username"></label>
                             <br>
-                            <input id="password" type="password" name="psw" placeholder="password" required><br>
+                            <input id="password" type="password" name="psw" placeholder="password" ><br>
                             <label for="password"></label>
                             <br> 
-                            <input id="email" type="text" name="email" placeholder="E-mail" required><br>
+                            <input id="email" type="text" name="email" placeholder="E-mail" ><br>
                             <label for="email"></label>
                             <br> 
-                            <input id="embg" type="text" name="embg" placeholder="EMBG" required required minlength="13" maxlength="13"><br>
+                            <input id="embg" type="text" name="embg" placeholder="EMBG"><br>
                             <label for="embg"></label>
                             <br>
                             <div class="btnHolder">
-                                    <input id="submit" type="submit" value="Log in" onclick="proverka()" >
+                                    <input id="submit" type="submit" name="Submit" value="Log in" >
                             </div>
                             
                     </form>
