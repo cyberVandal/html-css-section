@@ -11,7 +11,7 @@
      
       if (name.value == "")                                  
       { 
-          alert("Please enter your name."); 
+          windows.alert("Please enter your name."); 
           name.focus(); 
           return false; 
       } 
