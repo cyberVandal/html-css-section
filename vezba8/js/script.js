@@ -1,37 +1,21 @@
 
 
-
-function validateForm() {
-    var x = document.forms["form"]["username"].value;
-    if (x == "") {
-      alert("Name must be filled out");
-      return false;
-    }
-  }
-
-
-  function GEEKFORGEEKS()                                    
+  function Proverka()                                    
   { 
-      var name = document.forms["RegForm"]["Name"];               
-      var email = document.forms["RegForm"]["EMail"];    
-      var phone = document.forms["RegForm"]["Telephone"];  
-      var what =  document.forms["RegForm"]["Subject"];  
-      var password = document.forms["RegForm"]["Password"];  
-      var address = document.forms["RegForm"]["Address"];  
+      var name = document.forms["RegForm"]["username"];               
+      var email = document.forms["RegForm"]["email"];    
+      var embg = document.forms["RegForm"]["embg"];  
+   
+      var password = document.forms["RegForm"]["psw"];  
+    
      
       if (name.value == "")                                  
       { 
-          window.alert("Please enter your name."); 
+          windows.alert("Please enter your name."); 
           name.focus(); 
           return false; 
       } 
      
-      if (address.value == "")                               
-      { 
-          window.alert("Please enter your address."); 
-          name.focus(); 
-          return false; 
-      } 
          
       if (email.value == "")                                   
       { 
@@ -54,10 +38,10 @@ function validateForm() {
           return false; 
       } 
      
-      if (phone.value == "")                           
+      if (embg.value == "")                           
       { 
           window.alert("Please enter your telephone number."); 
-          phone.focus(); 
+          embg.focus(); 
           return false; 
       } 
      
@@ -68,24 +52,19 @@ function validateForm() {
           return flase; 
       } 
      
-      if (what.selectedIndex < 1)                  
-      { 
-          alert("Please enter your course."); 
-          what.focus(); 
-          return false; 
-      } 
+   
      
       return true; 
   }
   --
       function validateEmail() {
-         var emailID = document.myForm.EMail.value;
+         var emailID = document.myForm.email.value;
          atpos = emailID.indexOf("@");
          dotpos = emailID.lastIndexOf(".");
          
          if (atpos < 1 || ( dotpos - atpos < 2 )) {
             alert("Please enter correct email ID")
-            document.myForm.EMail.focus() ;
+            document.myForm.email.focus() ;
             return false;
          }
          return( true );
