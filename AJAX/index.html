@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Page Title</title>
+    
+ 
+   
+</head>
+<body>
+        <script >
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', "https://jsonplaceholder.typicode.com/posts", true);
+            xhr.send();
+           // xhr.addEventListener("readystatechange", processRequest, false);
+
+            xhr.onreadystatechange = processRequest;
+ 
+            function processRequest(e) {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    // time to partay!!!
+                    var response = JSON.parse(xhr.responseText);
+                    console.log(response[4].title);
+
+                 }
+                }
+
+     
+        </script>
+    
+</body>
+</html>
